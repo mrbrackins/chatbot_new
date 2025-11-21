@@ -1,0 +1,62 @@
+.chat {
+  border: 2px #f7f7f7 solid;
+  width: 40%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  border-radius: 19px;
+  /* overflow: hidden; */
+  max-width: 600px;
+}
+
+.chatHeader {
+  color: white;
+  background-color: rgb(85, 180, 211);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.chatHeader .icon,
+.chatHeader .closeChat {
+  font-size: px;
+}
+
+.chatBody {
+}
+
+/* 🔽 Scrollable chat area */
+.chatBody {
+  flex: 1; /* take all remaining space under header */
+  width: 100%;
+  padding: 12px 14px;
+  background-color: #ffffff;
+  overflow-y: auto; /* enable vertical scroll */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Optional: nicer scrollbar (WebKit) */
+.chatBody::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chatBody::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.chatBody::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}

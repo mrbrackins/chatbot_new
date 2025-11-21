@@ -1,0 +1,45 @@
+.messenger {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 90%;
+}
+
+.messenger textarea {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.5);
+  width: 80%;
+  height: 62px;
+  padding: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.chat-button {
+  padding: 10px 18px;
+  background: #55b4d3;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.chat-button:hover {
+  background: #0a86e3;
+}
+
+.chat-button:active {
+  background: #0975c7;
+}
+
+.chat-button:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(11, 147, 246, 0.4);
+}

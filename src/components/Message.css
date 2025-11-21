@@ -1,0 +1,39 @@
+.message {
+  display: flex;
+  /* font-size: 12px; */
+  font-size: 12px;
+  font-weight: 300;
+  justify-content: space-between;
+}
+
+.sent,
+.received {
+  display: flex;
+  gap: 1rem;
+  padding: 10px;
+}
+
+.sent {
+  justify-content: flex-end;
+}
+
+.received .message {
+  background: rgb(219, 243, 252);
+  border-radius: 15px;
+  padding: 20px;
+}
+.sent .message {
+  background: rgb(243 243 243);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.received .icon,
+.sent .icon {
+  width: 32px;
+  height: 32px;
+  background: #000000;
+  border: 2px solid #040404;
+  border-radius: 50%;
+  padding-right: 1.5rem;
+}
